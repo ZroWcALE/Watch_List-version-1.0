@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(14, 31, 34);
+  font-family: monospace;
+  margin: 0;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(12, 93, 107);
+}
+
+.search {
+  background-color: transparent;
+  border: 3px solid rgb(61, 222, 243);
+  border-radius: 50px;
+  font-size: 1rem;
+  padding: 1rem;
+  color: aqua;
+}
+
+.search::placeholder {
+  color: rgb(61, 222, 243);
+}
+
+.search:focus {
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: rgb(12, 93, 107);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  color: rgb(61, 222, 243);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 1px;
+}
+
+.movie-info span {
+  background-color: rgb(1, 36, 43);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 800;
+}
+
+.overview {
+  background-color: rgb(4, 41, 48);
+  color: rgb(31, 179, 216);
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
