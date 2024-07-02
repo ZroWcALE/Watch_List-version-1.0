@@ -15,6 +15,10 @@ header {
   background-color: rgb(12, 93, 107);
 }
 
+h3 {
+  text-decoration: underline;
+}
+
 .search {
   background-color: transparent;
   border: 3px solid rgb(61, 222, 243);

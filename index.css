@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(14, 31, 34);
+}
+
+h1 {
+  font-size: 6em;
+  font-weight: 500;
+  color: rgb(31, 179, 216);
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+h1 span {
+  transition: 8.2s ease-in-out;
+}
+
+h1:hover span:nth-child(1) {
+  margin-right: 10px;
+}
+
+h1:hover span:nth-child(1):after {
+  content: ' This';
+}
+
+h1:hover span:nth-child(2) {
+  margin-left: 40px;
+}
+
+h1:hover span {
+  color: blueviolet;
+  text-shadow: 15px 20px 10px #fff, 15px 20px 20px #fff, 0 0 40px #fff,
+    0 0 80px #fff, 0 0 120px #fff 0 0 160px #fff;
+}
